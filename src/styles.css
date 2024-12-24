@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --smooch: "Smooch Sans", serif;
+    --economica: "Economica", serif;
+
+    --theme-l: #FFFFF5;
+    --contrast-l: #F5F5F7;
+    --theme-d: #021526;
+    --contrast-d: #2D3250;
+}
+html{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+body{
+    width: 60%;
+    color: var(--theme-l);
+    background: var(--theme-d);
+    font-family: var(--economica);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--smooch);
+    line-height: 100%;
+    padding: 0%;
+    margin: 0;
+}
+.title-section{
+    margin-bottom: 1rem;
+}
+section{
+    margin: 2rem;
+}
+p{
+    margin: 0;
+}
+a{
+    color: var(--theme-l);
+    text-decoration: none;
+}
+i{
+    font-size: 18px;
+    color: var(--contrast-l)
+}

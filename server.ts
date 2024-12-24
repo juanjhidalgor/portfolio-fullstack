@@ -17,6 +17,11 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
 
+  server.use('/public', express.static(browserDistFolder, {
+    maxAge: '1y',
+    extensions: ['webp', 'jpg', 'jpeg', 'png', 'gif', 'ico'],
+  }));
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
