@@ -2,7 +2,7 @@
     --smooch: "Smooch Sans", serif;
     --economica: "Economica", serif;
 
-    --theme-l: #FFFFF5;
+    --theme-l: #DCD6F7;
     --contrast-l: #F5F5F7;
     --theme-d: #021526;
     --contrast-d: #2D3250;
@@ -14,7 +14,7 @@ html{
 }
 body{
     width: 60%;
-    color: var(--theme-l);
+    color: var(--contrast-l);
     background: var(--theme-d);
     font-family: var(--economica);
 }
@@ -34,7 +34,7 @@ p{
     margin: 0;
 }
 a{
-    color: var(--theme-l);
+    color: var(--contrast-l);
     text-decoration: none;
 }
 i{

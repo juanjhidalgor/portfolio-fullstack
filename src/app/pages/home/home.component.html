@@ -1,0 +1,53 @@
+<section id="basics">
+    <span class="title rol">{{basics.label}}</span>
+    <span class="title name">{{basics.name}}</span>
+    <span id="contact">
+      <a
+      id="location"
+      href="http://">
+        <i class="bi bi-globe-americas"></i>
+        {{basics.location.city}},{{basics.location.region}}</a>
+      <a href="tel:+573502427390">
+        <i class="bi bi-telephone-fill"></i></a>
+      <a href="mailto:juanjosehidalgorojas@gmail.com">
+        <i class="bi bi-envelope-fill"></i></a>
+      <a href="http://linkedin.com/in/juan-jose-hidalgo-rojas">
+        <i class="bi bi-linkedin"></i></a>
+      <a href="http://github.com/juanjhidalgor">
+        <i class="bi bi-github"></i></a>
+    </span>
+  </section>
+  <section id="about">
+    <h3 class="title-section">[ ABOUT ]</h3>
+    <p>{{basics.summary}}</p>
+  </section>
+  <section id="education">
+    <h3 class="title-section">[ EDUCATION ]</h3>
+    <a
+    href="{{item.url}}"
+    class="institution"
+    *ngFor="let item of education">
+      <h4>{{item.institution}}</h4>
+      <span class="desc">{{item.studyType}} {{item.area}}</span>
+      <span class="date">{{item.endDate}}<br/>{{item.startDate}}</span>
+    </a>
+  </section>
+  <section 
+  id="skills">
+    <h3 class="title-section">[ SKILLS ]</h3>
+    <span
+    class="skill"
+    *ngFor="let i of skills">
+      <i class="devicon-{{i.icon}}-plain"></i>{{i.name}}
+    </span>
+  </section>
+  <section id="projects">
+    <h3 class="title-section">[ PROJECTS ]</h3>
+    <a
+    href="{{item.url}}"
+    class="project"
+    *ngFor="let item of projects">
+      <h5>{{item.name}}</h5>
+      <p>{{item.description}}</p>
+    </a>
+</section>
